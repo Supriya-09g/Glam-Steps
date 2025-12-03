@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment | GlamSteps</title>
+<style>
+body{margin:0;font-family:Arial;background:#ffd6eb;text-align:center;}
+header{background:#ff007f;color:white;padding:20px;}
+nav a{color:white;text-decoration:none;margin:10px;font-weight:bold;}
+form{background:white;width:450px;margin:auto;margin-top:40px;padding:30px;border-radius:15px;}
+input,select{padding:12px;width:100%;margin-top:10px;border-radius:10px;border:1px solid gray;}
+button{background:#ff007f;color:white;border:none;padding:15px;width:100%;border-radius:10px;font-size:18px;margin-top:15px;}
+</style>
+</head>
+<body>
+
+<header><h1>Payment Details</h1>
+<nav><a href="index.html">Home</a><a href="product.html">Products</a></nav></header>
+
+<form onsubmit="return go()">
+<input type="text" placeholder="Full Name" required>
+<input type="text" placeholder="Address" required>
+<input type="number" placeholder="Phone Number" required>
+<select required>
+<option>Select Product</option>
+<option>Pink Princess - ₹899</option>
+<option>Golden Party - ₹1299</option>
+<option>Red Crystal - ₹1599</option>
+<option>Rose Pearl - ₹1999</option>
+</select>
+<button type="submit">Pay Now</button>
+</form>
+
+<script>
+function go(){
+window.location.href="thankyou.html";
+return false;
+}
+</script>
+
+</body>
+</html>
